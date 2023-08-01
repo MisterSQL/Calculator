@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+ul,h1{
+    padding: 0;
+    margin-bottom: 0;
+}
+
+#main_title{
+    font-weight: bolder;
+}
+
+#main_container_style{
+    background: #1c1d21;
+    padding: 2em;
+    border-radius: 1em;
+}
+
+.header_nav{
+    display: flex;
+    margin: 0;
+    list-style-type: none;
+    gap: 2em;
+}
+li,h1{
+    color: white;
+}
