@@ -5,6 +5,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-image: url("Picture/background.jpg");
 }
 
 ul,h1{
@@ -20,14 +21,129 @@ ul,h1{
     background: #1c1d21;
     padding: 2em;
     border-radius: 1em;
+    width: 20%;
 }
 
 .header_nav{
     display: flex;
     margin: 0;
     list-style-type: none;
+
     gap: 2em;
 }
 li,h1{
     color: white;
+}
+
+.button_style_operation{
+    background: #222327;
+    padding: 1em;
+    color: white;
+}
+#display_calculator{
+    text-align:right;
+}
+.display_converter{
+    text-align:left;
+}
+#display_calculator,.display_converter{
+    background: #222327;
+    padding: 1.2em .5em .5em 0;
+    color: white;
+    font-size: 18px;
+}
+.display_converter:first-child{
+    margin-top: 1em;
+}
+
+.button_style_number{
+    padding: 1em;
+    color: white;
+    background-color: #282a30;
+}
+
+#grid_container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 5px;
+    row-gap: 5px;
+    margin-top: 1em;
+}
+
+.grid_item_last{
+    grid-column: span 2;
+    background-color: #1a72f8;
+    font-size: 1em;
+}
+li{
+    list-style-type: none;
+}
+.nav_valuta{
+    position: relative;
+    left: 10px;
+    color:#515255;
+    bottom: 20px;
+}
+.list_valuta{
+    position: absolute;
+    top: 25%;
+    font-size: 16px;
+    background-color: rgba(19,10,50,50);
+    border-radius: 20%;
+    padding: 1em;
+    left: 0;
+    display: none;
+}
+.nav_valuta:hover >.list_valuta{
+    display: initial;
+}
+
+
+.list_valuta:last-child{
+    z-index: 1;
+}
+
+
+.display_converter:last-child{
+    margin-top: 4px;
+}
+.list_valuta li{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.main_container{
+    position: relative;
+}
+#changeCurrency{
+    position: absolute;
+    right: 10%;
+    top: 11%;
+}
+.grid_container_numbers{
+    margin-top: 1em;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2px;
+}
+.numbers{
+    background-color: #282a30;
+    max-width: 100%;
+    max-height: 50px;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+
+.box_valuta{
+    position: relative;
+}
+
+.valuta{
+    position: absolute;
+    left: 5%;
+    font-size: 18px;
+    top: -12px;
 }
